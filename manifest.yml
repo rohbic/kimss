@@ -1,0 +1,11 @@
+applications:
+- path: JavaCloudantApp.war
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: kimss
+  host: kimss
+  disk_quota: 1024M
+  services:
+  - kimss-cloudantNoSQLDB
+  - availability-monitoring-auto
